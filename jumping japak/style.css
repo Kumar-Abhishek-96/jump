@@ -17,8 +17,8 @@ body{
     background-image: url(dino.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 20vh;
     position: absolute;
     bottom: 0;
     left: 10%;
@@ -29,8 +29,8 @@ body{
     background-image: url(dragon.png);
     background-repeat: no-repeat;
     background-size: contain;
-    width: 15%;
-    height: 15%;
+    width: 20%;
+    height: 20vh;
     position: absolute;
     bottom: 0;
     left: 60%;
@@ -41,7 +41,7 @@ body{
     font-size: xx-large;
     color: rgb(48, 44, 44);
     position: relative;
-    top: 30px;
+    top: 35px;
     text-align: center;
     font-family: 'Times New Roman', Times, serif;
     
@@ -83,4 +83,28 @@ body{
     100%{
         left: -10vw;
     }
+}
+.allb{
+      margin-top: 25%;
+}
+#up{
+    height: 11%;
+    margin-left: 8%;
+    
+    width: 24%;
+}
+#left{
+   
+    height: 17%;
+    margin-left: 4%;
+    
+    width: 20%;
+  
+}
+#right{
+   
+    height: 23%;
+    margin-left: 63%;
+    
+    width: 20%;
 }
