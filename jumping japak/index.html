@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jumping japak</title>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
+    <script>
+        function upf() {
+            dino = document.querySelector('.dino');
+            dino.classList.add('animateDino');
+            setTimeout(() => {
+                dino.classList.remove('animateDino')
+            }, 1500);
+        }
+        function leftf() {
+            dino = document.querySelector('.dino');
+            dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
+            dino.style.left = dinoX - 112 + "px";
+        }
+        function rightf() {
+            dino = document.querySelector('.dino');
+            dinoX = parseInt(window.getComputedStyle(dino, null).getPropertyValue('left'));
+            dino.style.left = dinoX + 112 + "px";
+        }
+    </script>
 </head>
+
 <body>
     <div class="gameContainer">
         <div class="gameOver">Welcome To Jumping Japak</div>
         <div class="dino"></div>
         <div id="scoreCount">Score:0</div>
         <div class="obstacle obsani"></div>
+        <div class="allb">
+            <button id="left" onclick="leftf()">Left</button>
+            <button id="up" onclick="upf()">Up</button>
+            <button id="right" onclick="rightf()">Right</button>
+        </div>
     </div>
 </body>
+
 </html>
